@@ -1,5 +1,7 @@
+
 import Banner from '../../assets/images/banner.jpg'
 import { Button } from '../Button'
+import { Overley } from '../Overley'
 
 export const Hero = () => {
     return (
@@ -7,17 +9,10 @@ export const Hero = () => {
             <section className='h-125 rounded-[20px] mb-10 relative'>
                 <img src={Banner} alt="Banner" className='w-full h-full object-cover rounded-[20px] ' />
 
-                <div className="absolute w-full bottom-0 flex justify-end items-center text-center px-6 md:px-24 pb-32" >
-                    <div className='flex flex-col items-center text-white w-97'>
-                        <h2 className='text-xl font-medium leading-normal tracking-wider mb-2.5'>Krypton One</h2>
-                        <h1 className='text-2xl leading-9 tracking-widest mb-10'>Transforme qualquer passo em presença</h1>
-
-                        <div className='flex gap-3.5'>
-                           <Button variant='secondary'>Ver modelos</Button>
-                           <Button>Comprar</Button>
-                        </div>
-                    </div>
-                </div>
+                <Overley title='Krypton One' subtitle='Transforme qualquer passo em presença' className='bottom-0  justify-end  px-6 md:px-24 pb-32'>
+                    <Button variant='secondary'>Ver modelos</Button>
+                    <Button variant='primary'>Comprar</Button>
+                </Overley>
             </section>
         </div>
 
