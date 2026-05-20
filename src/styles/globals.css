@@ -45,10 +45,12 @@
 @utility container {
     max-width: 1440px;
     padding: 0 10px;
+    margin: 0 auto;
 }
 
 body {
     font-family: var(--font-display); 
+    color: #fff;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
